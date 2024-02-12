@@ -1,0 +1,29 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "node/file-extension-in-import": [
+      "error",
+      "never",
+      {
+        ".scss": "always",
+        ".svg": "always",
+        ".jpg": "always",
+        ".png": "always",
+        ".json": "always",
+        ".yaml": "always"
+      }
+    ]
+  },
+  "settings": {
+    "import/ignore": "node_modules",
+    "import/resolver": {
+      "node": {},
+      "webpack": {
+        "config": "./webpack/server.js"
+      }
+    }
+  }
+}
